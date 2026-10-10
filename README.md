@@ -91,4 +91,5 @@ Run `.venv/Scripts/python.exe -m unittest discover -s tests -v`. The 48 tests co
 
 server.py: API and job management. truthlens/batches.py: persistent server queue and upload cleanup. summaries.py: evidence guidance. explorer.py: detailed observations and coverage. prediction.py: three-view image classification and abstention. validation.py: benchmark status. worker.py: one-job processing. truthlens/analysis.py: analysis/inference. evidence.py: visuals/faces/claims/provenance. auth.py: accounts. pdf_report.py: PDF. web/: interface. train.py/evaluate.py: ML tools. setup_models.py: model recovery. Dockerfile/compose.yaml/Caddyfile: deployment.
 #   T r u t h l e n s  
+ #   T r u t h L e n s - U n c e r t a i n  
  
