@@ -1,0 +1,166 @@
+{
+  "model_sha256": "a93fb601eb79793926ee51475e31ad982a9b07142614bc872df5395bac220c4f",
+  "config_sha256": "890b1d07894d7df08feca9c3d6e40c88be1c7add35d51bd7facf3b09656819f3",
+  "dataset_manifest_sha256": "b464f94563600c394799f9bb90b05677e4292cff44b5fa5a02d597f4e77eb275",
+  "pipeline_sha256": "7c6b3b2341cfae18eac950732f72a3d751fdac0284956c63e04d96a5d22b0e25",
+  "created_at": "2026-10-09T20:08:42.754346+00:00",
+  "variants": {
+    "original": {
+      "coverage": 1.0,
+      "skipped": 0,
+      "metrics": {
+        "count": 600,
+        "threshold": 0.5,
+        "true_positive": 240,
+        "true_negative": 297,
+        "false_positive": 9,
+        "false_negative": 54,
+        "accuracy": 0.895,
+        "precision": 0.963855421686747,
+        "recall": 0.8163265306122449,
+        "false_positive_rate": 0.029411764705882353,
+        "roc_auc": 0.9494575608020986,
+        "brier_score": 0.09035890553960695,
+        "expected_calibration_error": 0.07941617952886247,
+        "note": "Metrics apply only to this provided dataset and eligible detected inputs. No calibration is applied."
+      },
+      "warning": "Use independently labeled, source-separated data not used during training."
+    },
+    "jpeg_quality_60": {
+      "coverage": 1.0,
+      "skipped": 0,
+      "metrics": {
+        "count": 600,
+        "threshold": 0.5,
+        "true_positive": 187,
+        "true_negative": 293,
+        "false_positive": 13,
+        "false_negative": 107,
+        "accuracy": 0.8,
+        "precision": 0.935,
+        "recall": 0.6360544217687075,
+        "false_positive_rate": 0.042483660130718956,
+        "roc_auc": 0.8997487884042505,
+        "brier_score": 0.16501756409302348,
+        "expected_calibration_error": 0.1555008265805228,
+        "note": "Metrics apply only to this provided dataset and eligible detected inputs. No calibration is applied."
+      },
+      "warning": "Use independently labeled, source-separated data not used during training."
+    },
+    "half_resolution": {
+      "coverage": 1.0,
+      "skipped": 0,
+      "metrics": {
+        "count": 600,
+        "threshold": 0.5,
+        "true_positive": 230,
+        "true_negative": 300,
+        "false_positive": 6,
+        "false_negative": 64,
+        "accuracy": 0.8833333333333333,
+        "precision": 0.9745762711864406,
+        "recall": 0.782312925170068,
+        "false_positive_rate": 0.0196078431372549,
+        "roc_auc": 0.9623071450802543,
+        "brier_score": 0.09310288207633527,
+        "expected_calibration_error": 0.09518412332959954,
+        "note": "Metrics apply only to this provided dataset and eligible detected inputs. No calibration is applied."
+      },
+      "warning": "Use independently labeled, source-separated data not used during training."
+    }
+  },
+  "selective": {
+    "count": 448,
+    "uncertain": 152,
+    "coverage": 0.7466666666666667,
+    "accuracy": 0.9241071428571429,
+    "real_predictions": 303,
+    "fake_predictions": 145,
+    "real_precision": 0.8910891089108911,
+    "fake_precision": 0.993103448275862
+  },
+  "dataset": {
+    "name": "TheKernel01/AIGC-Detection-Benchmark",
+    "revision": "c91d9024a5a77ef06e2ec681b53f9caf08675663",
+    "manifest_sha256": "b464f94563600c394799f9bb90b05677e4292cff44b5fa5a02d597f4e77eb275",
+    "count": 600,
+    "sampling": "Seed 20261010: 60 random disjoint 100-row blocks, 10 random rows per block. Cluster sample, not full benchmark.",
+    "representation": "Hugging Face dataset-viewer cached JPEG previews, not original source files.",
+    "training_overlap": "Not independently audited.",
+    "labels": "Real photographs vs AI-generated images, not all deceptive editing."
+  },
+  "generators": {
+    "Real": {
+      "count": 306,
+      "accuracy": 0.9705882352941176
+    },
+    "ADM": {
+      "count": 29,
+      "accuracy": 0.7241379310344828
+    },
+    "BigGAN": {
+      "count": 9,
+      "accuracy": 1.0
+    },
+    "CycleGAN": {
+      "count": 3,
+      "accuracy": 0.3333333333333333
+    },
+    "DALLE2": {
+      "count": 5,
+      "accuracy": 0.8
+    },
+    "GauGAN": {
+      "count": 21,
+      "accuracy": 1.0
+    },
+    "GLIDE": {
+      "count": 20,
+      "accuracy": 0.9
+    },
+    "Midjourney": {
+      "count": 32,
+      "accuracy": 0.25
+    },
+    "ProGAN": {
+      "count": 1,
+      "accuracy": 1.0
+    },
+    "SD14": {
+      "count": 25,
+      "accuracy": 1.0
+    },
+    "SD15": {
+      "count": 56,
+      "accuracy": 0.9464285714285714
+    },
+    "SDXL": {
+      "count": 10,
+      "accuracy": 0.6
+    },
+    "StarGAN": {
+      "count": 5,
+      "accuracy": 0.8
+    },
+    "StyleGAN": {
+      "count": 13,
+      "accuracy": 0.7692307692307693
+    },
+    "StyleGAN2": {
+      "count": 5,
+      "accuracy": 1.0
+    },
+    "VQDM": {
+      "count": 22,
+      "accuracy": 0.9545454545454546
+    },
+    "WhichFaceIsReal": {
+      "count": 1,
+      "accuracy": 1.0
+    },
+    "Wukong": {
+      "count": 37,
+      "accuracy": 0.8648648648648649
+    }
+  }
+}

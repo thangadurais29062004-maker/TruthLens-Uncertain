@@ -1,0 +1,16 @@
+{
+  "name": "Deep-Fake-Detector-v2 / ViT (quantized ONNX)",
+  "model_path": "detector.onnx",
+  "size": 224,
+  "mean": [0.5, 0.5, 0.5],
+  "std": [0.5, 0.5, 0.5],
+  "resample": "bilinear",
+  "activation": "softmax",
+  "manipulated_index": 1,
+  "domain": "faces",
+  "source": "https://huggingface.co/onnx-community/Deep-Fake-Detector-v2-Model-ONNX",
+  "revision": "4ea3d66dfb1bedca29727c6a0c6fa061d5f3f9c9",
+  "sha256": "3519c22b9695f99ddc00821228eeac91239065a90bfbdb4917858b3ec1dcfc42",
+  "license": "Apache-2.0",
+  "evaluation_status": "Author-reported evaluation only; no independent TruthLens benchmark or calibration. Quantized conversion may differ from the original checkpoint."
+}

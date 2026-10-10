@@ -1,0 +1,6 @@
+numpy>=2.0,<3
+Pillow>=11.0,<13
+opencv-python-headless>=4.10,<5
+onnxruntime>=1.20,<2
+c2pa-python>=0.33,<1
+reportlab>=4,<5

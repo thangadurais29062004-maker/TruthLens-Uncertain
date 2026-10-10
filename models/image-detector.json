@@ -1,0 +1,28 @@
+{
+  "name": "Community Forensics / official ViT-Small 224",
+  "model_path": "official-community-224.onnx",
+  "size": 224,
+  "resize_shorter": 256,
+  "mean": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "std": [
+    0.229,
+    0.224,
+    0.225
+  ],
+  "resample": "bilinear",
+  "activation": "sigmoid",
+  "manipulated_index": 0,
+  "domain": "whole_image",
+  "prediction_task": "ai_generation",
+  "scope": "Shorter edge resized to 256; center 224-pixel crop. Real photograph versus AI-generated image, not every edit.",
+  "source": "https://huggingface.co/OwensLab/commfor-model-224",
+  "revision": "26afc31e6b40c312c3fd42c05a758be62446215b",
+  "sha256": "a93fb601eb79793926ee51475e31ad982a9b07142614bc872df5395bac220c4f",
+  "checkpoint_sha256": "a6cc439d5a6d2dfadd60c77d27a2838ad55b34e601ecd30f46ad97266d6ac4e0",
+  "license": "MIT",
+  "evaluation_status": "Local public-sample benchmark available; 600 cached JPEG previews. Training overlap not audited; outputs uncalibrated."
+}

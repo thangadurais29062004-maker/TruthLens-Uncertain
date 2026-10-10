@@ -1,0 +1,30 @@
+services:
+  app:
+    build: .
+    environment:
+      TRUTHLENS_PUBLIC_ORIGIN: https://${TRUTHLENS_DOMAIN:?Set TRUTHLENS_DOMAIN}
+      TRUTHLENS_ALLOW_REGISTRATION: "0"
+      GOOGLE_FACT_CHECK_API_KEY: ${GOOGLE_FACT_CHECK_API_KEY:-}
+      TRUTHLENS_RETENTION_DAYS: ${TRUTHLENS_RETENTION_DAYS:-0}
+    volumes:
+      - truthlens-data:/app/data
+    mem_limit: 2g
+    cpus: 2
+    pids_limit: 128
+    restart: unless-stopped
+  proxy:
+    image: caddy:2
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      TRUTHLENS_DOMAIN: ${TRUTHLENS_DOMAIN:?Set TRUTHLENS_DOMAIN}
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+      - caddy-config:/config
+    restart: unless-stopped
+volumes:
+  truthlens-data:
+  caddy-data:
+  caddy-config:

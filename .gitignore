@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+data/
+models/*.onnx
+models/feature-model.json
+.env
+evaluation.json

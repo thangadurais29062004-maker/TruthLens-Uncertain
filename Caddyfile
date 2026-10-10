@@ -1,0 +1,6 @@
+{$TRUTHLENS_DOMAIN} {
+    request_body {
+        max_size 50MB
+    }
+    reverse_proxy app:8000
+}
